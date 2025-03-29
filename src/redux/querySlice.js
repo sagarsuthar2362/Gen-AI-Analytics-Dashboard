@@ -28,10 +28,12 @@ const querySlice = createSlice({
 export const { submitQuery, querySuccess, queryFailure } = querySlice.actions;
 
 export const processQuery = (query) => (dispatch) => {
+  console.log("Query submitted:", query);
   dispatch(submitQuery(query));
   setTimeout(() => {
+    console.log("Query processed, dispatching success");
     dispatch(querySuccess(`Insights for: "${query}" (mock response)`));
-  }, 1000); 
+  }, 1000);
 };
 
 export default querySlice.reducer;

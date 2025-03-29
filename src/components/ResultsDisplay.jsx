@@ -27,7 +27,7 @@ function ResultsDisplay() {
   return (
     <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
       <h2 className="text-2xl font-bold text-gray-800 mb-4">Results</h2>
-      {mockData ? ( 
+      {currentResult ? ( 
         <div className="space-y-6">
           <p className="text-gray-700 leading-relaxed bg-gray-50 p-4 rounded-lg">
             {currentResult}

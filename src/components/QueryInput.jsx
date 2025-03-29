@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { submitQuery } from "../redux/querySlice";
+import { processQuery } from "../redux/querySlice"
 
 const suggestions = [
   "What are the sales trends this quarter?",
@@ -15,7 +16,7 @@ function QueryInput() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (query.trim()) {
-      dispatch(submitQuery(query));
+      dispatch(processQuery(query));
       setQuery("");
     }
   };
