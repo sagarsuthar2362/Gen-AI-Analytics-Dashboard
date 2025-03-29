@@ -16,7 +16,7 @@ A React-based SPA simulating a Gen AI Analytics tool for non-technical users to 
 - **Visualization**: Recharts
 
 ## Setup
-1. Clone the repo: `git clone <repo-link>`
+1. Clone the repo: `git clone https://github.com/sagarsuthar2362/Gen-AI-Analytics-Dashboard`
 2. Install dependencies: `npm install`
 3. Run locally: `npm start`
 
