@@ -1,3 +1,4 @@
+
 import React from "react";
 import { useSelector } from "react-redux";
 
@@ -12,8 +13,8 @@ function QueryHistory() {
       ) : (
         <ul className="space-y-3">
           {queries.map((q, idx) => (
-            <li
-              key={idx}
+            <li 
+              key={idx} 
               className="text-gray-700 p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors duration-150"
             >
               {q}
@@ -24,4 +25,4 @@ function QueryHistory() {
     </div>
   );
 }
-export default QueryHistory;
+  export default QueryHistory;
